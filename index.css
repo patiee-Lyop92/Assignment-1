@@ -25,15 +25,14 @@ header styling
  }
 /*===Container styling===*/
 .main-wrapper {
-    max-width: 1200px;
+    max-width: 1440px;
     margin: 0 auto;
-    height: 700px;
+    /*height: 700px;*/
     margin: 0 auto;
     background: rgb(247,253,252);
 }
 .content-wrapper {
-    max-width: 1000px;
-    height: 600px;
+    max-width: 1200px;
     flex-shrink: 0;
     margin: 0 auto;
     display: flex;
@@ -171,6 +170,7 @@ form button {
 Media-query-styling
 ==================*/
 @media (min-width: 712px) {
+    
     .starters-section {
         display: none;
     }
@@ -178,6 +178,8 @@ Media-query-styling
     header {
         display: none;
     }
+
+
     footer{
         display: none;
     }
@@ -210,10 +212,10 @@ Media-query-styling
     }
     footer {
         margin-bottom: 2em;
+        margin: 0 auto;
         > p {
             font-size: .75rem;
             width: 250px;
-            margin: 0 auto;
         }
     }
     .desktop-ptag{
@@ -223,9 +225,11 @@ Media-query-styling
     .activity-input,
     .activity-select{
         width: 295px;
+        height: 40px
     }
     .main-wrapper{
         max-width: 375px;
+        margin: 0 auto;
         display: flex;
         flex-direction: row;
     }
